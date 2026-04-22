@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Velmira ✨</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Velmira</h1>
+  <p class="tagline">soft elegance for every soul ✨</p>
+
+  <div class="cart-icon" onclick="toggleCart()">
+    🛍️ <span id="cart-count">0</span>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="overlay">
+    <h2>New Summer Drop 🌷</h2>
+    <p>minimal • dreamy • you</p>
+    <button onclick="scrollToProducts()">Enter the Dream</button>
+  </div>
+</section>
+
+<!-- FILTER -->
+<div class="filters">
+  <button onclick="filterProducts('all')">All</button>
+  <button onclick="filterProducts('top')">Tops</button>
+  <button onclick="filterProducts('dress')">Dresses</button>
+  <button onclick="filterProducts('skirt')">Skirts</button>
+</div>
+
+<section class="products" id="products">
+
+  <!-- TOPS -->
+  <div class="card" data-category="top">
+    <img src="img1.jpg">
+    <h3>Petal Dream Top 🌸</h3>
+    <p>₹599</p>
+    <button onclick="addToCart('Petal Dream Top',599)">♡ Add to Cart</button>
+  </div>
+
+  <div class="card" data-category="top">
+    <img src="img2.jpg">
+    <h3>Cloud Kiss Tee ☁️</h3>
+    <p>₹499</p>
+    <button onclick="addToCart('Cloud Kiss Tee',499)">♡ Add to Cart</button>
+  </div>
+
+  <!-- DRESSES -->
+  <div class="card" data-category="dress">
+    <img src="img3.jpg">
+    <h3>Rose Whisper Dress 🌹</h3>
+    <p>₹1499</p>
+    <button onclick="addToCart('Rose Whisper Dress',1499)">♡ Add to Cart</button>
+  </div>
+
+  <div class="card" data-category="dress">
+    <img src="img4.jpg">
+    <h3>Sunlit Bloom Dress 🌼</h3>
+    <p>₹1399</p>
+    <button onclick="addToCart('Sunlit Bloom Dress',1399)">♡ Add to Cart</button>
+  </div>
+
+  <!-- SKIRTS -->
+  <div class="card" data-category="skirt">
+    <img src="img5.jpg">
+    <h3>Twilight Skirt 🌙</h3>
+    <p>₹899</p>
+    <button onclick="addToCart('Twilight Skirt',899)">♡ Add to Cart</button>
+  </div>
+
+  <div class="card" data-category="skirt">
+    <img src="img6.jpg">
+    <h3>Blush Petal Skirt 🌷</h3>
+    <p>₹799</p>
+    <button onclick="addToCart('Blush Petal Skirt',799)">♡ Add to Cart</button>
+  </div>
+
+  <!-- MORE -->
+  <div class="card" data-category="dress">
+    <img src="img7.jpg">
+    <h3>Moonlight Denim 🌙</h3>
+    <p>₹1299</p>
+    <button onclick="addToCart('Moonlight Denim',1299)">♡ Add to Cart</button>
+  </div>
+
+  <div class="card" data-category="top">
+    <img src="img8.jpg">
+    <h3>Lavender Muse Top 💜</h3>
+    <p>₹699</p>
+    <button onclick="addToCart('Lavender Muse Top',699)">♡ Add to Cart</button>
+  </div>
+
+  <div class="card" data-category="dress">
+    <img src="img9.jpg">
+    <h3>Golden Hour Dress ✨</h3>
+    <p>₹1599</p>
+    <button onclick="addToCart('Golden Hour Dress',1599)">♡ Add to Cart</button>
+  </div>
+
+  <div class="card" data-category="skirt">
+    <img src="img10.jpg">
+    <h3>Butterfly Skirt 🦋</h3>
+    <p>₹899</p>
+    <button onclick="addToCart('Butterfly Skirt',899)">♡ Add to Cart</button>
+  </div>
+
+</section>
+
+<!-- CART -->
+<div class="cart" id="cart">
+  <h2>Your Cart 💖</h2>
+  <div id="cart-items"></div>
+  <h3>Total: ₹<span id="cart-total">0</span></h3>
+</div>
+
+<footer>
+  <p>made with ♡ by Malishka Bhayje</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
